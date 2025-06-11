@@ -73,7 +73,6 @@ a {
     color: #666;
 }
 
-/* Tabella carrello */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -111,7 +110,6 @@ tbody td img {
     object-fit: contain;
 }
 
-/* Input quantità */
 input[type="number"] {
     width: 60px;
     padding: 6px 8px;
@@ -121,7 +119,6 @@ input[type="number"] {
     text-align: center;
 }
 
-/* Pulsanti */
 button {
     padding: 6px 12px;
     background-color: #111;
@@ -136,14 +133,12 @@ button:hover {
     background-color: #333;
 }
 
-/* Totale carrello */
 h2 {
     margin-top: 20px;
     font-size: 1.5rem;
     color: #222;
 }
 
-/* Bottone checkout */
 .checkout-btn {
     display: inline-block;
     margin-top: 20px;
