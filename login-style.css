@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login-container {
+  max-width: 400px;
+  width: 90%;
+  text-align: left;
+}
+
+.logos {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 20px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.country {
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.country a {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.login-form input[type="text"],
+.login-form input[type="email"],
+.login-form input[type="password"]{
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.login-form button {
+  background-color: #000;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+  background-color: #333;
+}
+
+.privacy {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+.privacy a {
+  color: #555;
+  text-decoration: underline;
+}
+
+.link-accedi {
+  color: inherit;
+  text-decoration: underline;
+  font-weight: normal;
+}
+.link-accedi:hover {
+  text-decoration: none;
+}
+

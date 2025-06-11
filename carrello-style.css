@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.top-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 5%;
+}
+
+.logo {
+    width: 68px;
+    height: 34px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.central-navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.right-elements {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar input {
+    padding: 10px 20px;
+    border: none;
+    background-color: #e2e2e2;
+    height: 40px;
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.middle {
+    flex: 1;
+    padding: 30px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.content p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Tabella carrello */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+thead th {
+    text-align: left;
+    padding: 15px 20px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody td {
+    padding: 15px 20px;
+    vertical-align: middle;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody td img {
+    border-radius: 6px;
+    object-fit: contain;
+}
+
+/* Input quantità */
+input[type="number"] {
+    width: 60px;
+    padding: 6px 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+}
+
+/* Pulsanti */
+button {
+    padding: 6px 12px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+/* Totale carrello */
+h2 {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    color: #222;
+}
+
+/* Bottone checkout */
+.checkout-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #111;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+    background-color: #444;
+}
