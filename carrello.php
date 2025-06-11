@@ -9,7 +9,6 @@ require_once "server.php"; // Connessione al DB
 
 $id_utente = $_SESSION['utente']['id'];
 
-// Recupero i dati dei prodotti dall'API esterna
 $api_json = file_get_contents("https://raw.githubusercontent.com/gioovannisale02/nike-data/main/db.json");
 if ($api_json === false) {
     die("Errore nel recupero dei dati dei prodotti dall'API.");
@@ -17,13 +16,11 @@ if ($api_json === false) {
 $api_data = json_decode($api_json, true);
 $prodotti_api = $api_data['products'] ?? $api_data; // fallback se non è dentro 'products'
 
-// Creo una mappa di lookup [id_prodotto => dettagli]
 $prodotti_lookup = [];
 foreach ($prodotti_api as $p) {
     $prodotti_lookup[$p['id']] = $p;
 }
 
-// Recupero dal database i prodotti nel carrello dell’utente
 $sql = "SELECT * FROM carrello WHERE id_utente = ?";
 $stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $id_utente);
